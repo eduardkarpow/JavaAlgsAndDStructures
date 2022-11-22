@@ -6,7 +6,17 @@ public class LinkedList05 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("введите начальные элементы не более 5");
-        String[] baseNums = sc.nextLine().split(" ");
+        String[] baseNums;
+        try{
+            baseNums = sc.nextLine().split(" ");
+            if(baseNums.length>5){
+                throw new TooMuchElementsError();
+            }
+        } catch (TooMuchElementsError e){
+            System.out.println(e.getMessage());
+            baseNums = sc.nextLine().split(" ");
+        }
+
         int[] baseIntNums = new int[baseNums.length];
         for(int i = 0; i < baseNums.length; i++){
             baseIntNums[i] = Integer.parseInt(baseNums[i]);
@@ -146,5 +156,10 @@ class Node {
 
     public int getSizeOfFilledCells() {
         return sizeOfFilledCells;
+    }
+}
+class TooMuchElementsError extends RuntimeException{
+    TooMuchElementsError(){
+        super("Error: too much elements was sended");
     }
 }

@@ -14,22 +14,27 @@ public class DoubleLinkedListTester {
         System.out.println("end - закончить сессию");
         System.out.println("--------------------Список комманд---------------------");
         while(true){
-            String command = sc.nextLine();
-            if(command.equalsIgnoreCase("end")){
-                break;
+            try{
+                String command = sc.nextLine();
+                if(command.equalsIgnoreCase("end")){
+                    break;
+                }
+                else if(command.equalsIgnoreCase("add")){
+                    ls.insertElement(Integer.parseInt(sc.nextLine()));
+                }
+                else if(command.equalsIgnoreCase("delete")){
+                    int id = sc.nextInt();
+                    ls.deleteElement(id);
+                }
+                else if(command.equalsIgnoreCase("show")) {
+                    ls.printList();
+                } else if (command.equalsIgnoreCase("print")) {
+                    ls.printElement(Integer.parseInt(sc.nextLine()));
+                }
+            } catch (IndexOutOfBoundsError e){
+                System.out.println(e.getMessage());
             }
-            else if(command.equalsIgnoreCase("add")){
-                ls.insertElement(Integer.parseInt(sc.nextLine())-1);
-            }
-            else if(command.equalsIgnoreCase("delete")){
-                int id = sc.nextInt();
-                ls.deleteElement(id-1);
-            }
-            else if(command.equalsIgnoreCase("show")) {
-                ls.printList();
-            } else if (command.equalsIgnoreCase("print")) {
-                ls.printElement(Integer.parseInt(sc.nextLine())-1);
-            }
+
         }
 
     }
@@ -55,6 +60,9 @@ class DoubleLinkedList{
         this.head = ns;
     }
     public void insertElement(int id){
+        if(id < 0 || id > size){
+            throw new IndexOutOfBoundsError();
+        }
         NodeStudent2 ns = new NodeStudent2(this.scanner, this.tail);
         if(isEmpty()) {
             this.head = ns;
@@ -87,6 +95,9 @@ class DoubleLinkedList{
         this.head.setPrev(null);
     }
     public void deleteElement(int id){
+        if(id < 0 || id > size){
+            throw new IndexOutOfBoundsError();
+        }
         if(id == 0){
             shiftElement();
         }
@@ -103,6 +114,9 @@ class DoubleLinkedList{
 
     }
     public void printElement(int id){
+        if(id < 0 || id >= size){
+            throw new IndexOutOfBoundsError();
+        }
         searchElement(id).printElement();
     }
     public void printList(){

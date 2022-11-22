@@ -14,22 +14,27 @@ public class LinkedListTester {
         System.out.println("end - закончить сессию");
         System.out.println("--------------------Список комманд---------------------");
         while(true){
-            String command = sc.nextLine();
-            if(command.equalsIgnoreCase("end")){
-                break;
+            try{
+                String command = sc.nextLine();
+                if(command.equalsIgnoreCase("end")){
+                    break;
+                }
+                else if(command.equalsIgnoreCase("add")){
+                    ls.insertElement(Integer.parseInt(sc.nextLine()));
+                }
+                else if(command.equalsIgnoreCase("delete")){
+                    int id = sc.nextInt();
+                    ls.deleteObject(id);
+                }
+                else if(command.equalsIgnoreCase("show")) {
+                    ls.printList();
+                } else if (command.equalsIgnoreCase("print")) {
+                    ls.printElement(Integer.parseInt(sc.nextLine()));
+                }
+            } catch (IndexOutOfBoundsError e){
+                System.out.println(e.getMessage());
             }
-            else if(command.equalsIgnoreCase("add")){
-                ls.insertElement(Integer.parseInt(sc.nextLine())-1);
-            }
-            else if(command.equalsIgnoreCase("delete")){
-                int id = sc.nextInt();
-                ls.deleteObject(id-1);
-            }
-            else if(command.equalsIgnoreCase("show")) {
-                ls.printList();
-            } else if (command.equalsIgnoreCase("print")) {
-                ls.printElement(Integer.parseInt(sc.nextLine())-1);
-            }
+
         }
 
 
@@ -52,7 +57,11 @@ class LinkedList{
         this.head = ns;
     }
     public void insertElement(int id){
+        if(id >size || id < 0){
+            throw new IndexOutOfBoundsError();
+        }
         NodeStudent ns = new NodeStudent(this.scanner);
+
         if(isEmpty()) {
             this.head = ns;
         }
@@ -84,6 +93,9 @@ class LinkedList{
         this.head = this.head.getNext();
     }
     public void deleteObject(int id){
+        if(id >= size || id < 0){
+            throw new IndexOutOfBoundsError();
+        }
         if(id == 0){
             shiftElement();
         }
@@ -98,7 +110,10 @@ class LinkedList{
 
     }
     public void printElement(int id){
-        searchElement(id+1).printElement();
+        if(id < 0 || id >= size){
+            throw new IndexOutOfBoundsError();
+        }
+        searchElement(id).printElement();
     }
     public void printList(){
         NodeStudent container = this.head;
@@ -143,5 +158,10 @@ class NodeStudent{
 
     public void setNext(NodeStudent next) {
         this.next = next;
+    }
+}
+class IndexOutOfBoundsError extends RuntimeException{
+    public IndexOutOfBoundsError(){
+        super("Error: index out of bounds");
     }
 }
