@@ -1,33 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8a4a9f2-7d03-486e-90a6-dbf711ad7bad" name="Changes" comment="" />
+    <list default="true" id="c7d41510-3ceb-43a3-9be7-57dd43aa5338" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW25.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HW25/EmailCheckTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HW25/PasswordValidationTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HW25/PricesSplittingTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HW26/IteratorTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HW26/StackInversionTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HW27/HashTab.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HW28/HashSetToTreeSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HW28/MapTester02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HW29/MilkyWay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HW30/BSTreeTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HW30/BinaryTreeOperationsTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HW30/HaffmanAlgorithmTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HW32/ZeRoGercTester.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectId" id="2Fw71neghcZ36TMR9dTkjEfZgwn" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2HiOul0N91vvy4JIGDKSbutg0Qs" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/edkar/IdeaProjects/HW25&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b8a4a9f2-7d03-486e-90a6-dbf711ad7bad" name="Changes" comment="" />
-      <created>1665391082313</created>
+      <changelist id="c7d41510-3ceb-43a3-9be7-57dd43aa5338" name="Changes" comment="" />
+      <created>1668764664176</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1665391082313</updated>
+      <updated>1668764664176</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
