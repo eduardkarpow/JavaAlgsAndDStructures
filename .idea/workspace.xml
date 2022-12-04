@@ -1,13 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8a4a9f2-7d03-486e-90a6-dbf711ad7bad" name="Changes" comment="" />
+    <list default="true" id="ae37ef4b-78de-4d7a-a903-8315375e477e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW18.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HW18/ThrowsDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HW19/INNTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HW20/GenericsTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HW22/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HW22/Model.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HW22/NotSupportedSymbolError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HW22/View.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HW23/QueueTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HW24/ChairAbstractFactoryTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HW24/ComplexAbstractFactoryTester.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectId" id="2Fw71neghcZ36TMR9dTkjEfZgwn" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2HWfeqYjKTbFjX61h4DbJCZIzjj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -16,18 +47,48 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/edkar/IdeaProjects/youngAndYandex"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="HW20" />
+      <recent name="HW19" />
+      <recent name="HW18" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b8a4a9f2-7d03-486e-90a6-dbf711ad7bad" name="Changes" comment="" />
-      <created>1665391082313</created>
+      <changelist id="ae37ef4b-78de-4d7a-a903-8315375e477e" name="Changes" comment="" />
+      <created>1668405861437</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1665391082313</updated>
+      <updated>1668405861437</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.EmptyStackException" package="java.util" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
